@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Hangout Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        #invitation-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="invitation-container">
+        <h1>Special Hangout Invitation</h1>
+        <p>Hey there! I have something exciting to ask you...</p>
+
+        <form action="your-response-page.html" method="post">
+            <label for="yes">🌟 Yes, I'd love to!</label>
+            <input type="radio" id="yes" name="response" value="yes">
+
+            <label for="no">❌ No, I can't make it.</label>
+            <input type="radio" id="no" name="response" value="no">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
